@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 const TopicDetails = () => {
   const topic = useLoaderData();
 
-  console.log(topic.data.questions.options);
+  //console.log(topic.data.questions.options);
 
   return (
     <div>
