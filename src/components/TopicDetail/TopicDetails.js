@@ -3,15 +3,14 @@ import { useLoaderData } from "react-router-dom";
 
 const TopicDetails = () => {
   const topic = useLoaderData();
-  console.log(topic);
+
+  console.log(topic.data.questions.options);
 
   return (
     <div>
       <div>
         <h1 className="text-xl">{topic.data.questions[0].question}</h1>
-        <h3 className=" grid grid-cols-2 gap-4 ">
-          {topic.data.questions[0].options}
-        </h3>
+        <h3 className=" ">{topic.data.questions[0].options}</h3>
       </div>
       <div>
         <h1>{topic.data.questions[1].question}</h1>
