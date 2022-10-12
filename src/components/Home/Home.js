@@ -4,16 +4,12 @@ import Topic from "../Topic/Topic";
 
 const Home = () => {
   const topics = useLoaderData();
-  console.log(topics.data.length);
+  console.log(topics);
 
   return (
     <div>
       <h2>home page: {topics.data.length}</h2>
-      <h2>
-        Attend the quiz and test Your web development skill. You will know how
-        much expet you are!{" "}
-      </h2>
-      <div className="grid md:row">
+      <div className="flex justify-evenly">
         {topics.data.map((topic) => (
           <Topic key={topic.id} topic={topic}></Topic>
         ))}
