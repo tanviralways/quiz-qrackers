@@ -8,7 +8,6 @@ const Home = () => {
 
   return (
     <div>
-      <h2>home page: {topics.data.length}</h2>
       <div className="flex justify-evenly">
         {topics.data.map((topic) => (
           <Topic key={topic.id} topic={topic}></Topic>
